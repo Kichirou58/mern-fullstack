@@ -10,7 +10,7 @@ import SinglePost from "../components/posts/SinglePost";
 import AddPostModal from "../components/posts/AddPostModal";
 import addIcon from "../assets/plus-circle-fill.svg";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import ToolTip from "react-bootstrap/ToolTip";
+import Tooltip from "react-bootstrap/Tooltip";
 import Toast from "react-bootstrap/Toast";
 import UpdatePostModal from "../components/posts/UpdatePostModal";
 
@@ -68,7 +68,7 @@ const Dashboard = () => {
                 </Row>
 
                 {/* Open Add Post Modal */}
-                <OverlayTrigger placement="left" overlay={<ToolTip>Add a new thing to learn </ToolTip>}>
+                <OverlayTrigger placement="left" overlay={<Tooltip>Add a new thing to learn </Tooltip>}>
                     <Button className="btn-floating" onClick={setShowAddPostModal.bind(this, true)}>
                         <img src={addIcon} alt="add-post" width="60" height="60" />
                     </Button>
